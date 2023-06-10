@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joche Díaz Fotografía</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61242ae11c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Fotografo · Cinematografo · Editor de video</p>
+            <h1>Hola, yo soy<br> <span>Joche Díaz</span></h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/user.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Sobre Mi</h1>
+                <p>Soy un Realizador de contenido especializado en diferentes areas por lo que disfruto de desenvolver y ampliar mis conocimientos de cada diciplina dentro de las necesidades de los proyectos que llevo acabo. De esta forma puedo trabajar de manera simultanea diferentes asignaciones.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-links">Skills</p>
+                    
+                </div>
+                <div class="tab-contents">
+                    <ul>
+                        <li><span>Fotografía</span> <br> Publicitaria y de producto</li>
+                        <li><span>Video</span> <br> Pre, pro y post produccón audiovisual </li>
+                        <li><span>Edición</span> <br> Montaje, correción de color y etalonaje</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Servicios</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-image"></i>
+                <h2>Fotografía Publicitaria</h2>
+                <p> Serviciós de Fotografía de moda, retrato, producto y E-commerce</p>
+                
+
+            </div>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Contenido audiovisual</h2>
+                <p> Para redes sociales, Comerciales, reels, videos corporativos</p>
+                
+
+            </div>
+            <div>
+                <i class="fa-solid fa-display"></i>
+                <h2>Edicón de video</h2>
+                <p> Monataje, edición sonora, Correcíon de color y etalonaje </p>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portafolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/pfoto.jpg" alt="">
+                <div class="layer">
+                    <h3>Fotografía</h3>
+                    <p></p>
+                    <a href="https://drive.google.com/drive/folders/1MtL8VvvENuzsoXkaWK8ehWuq6BuDwelK"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/pvideo.jpg" alt="">
+                <div class="layer">
+                    <h3>Edición de video</h3>
+                    <p></p>
+                    <a href="https://drive.google.com/file/d/1fG_Hlntj2iKFJ-RrayBftqqn10MohvQe/view?usp=share_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contactame</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> bluex1011@hotmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i> +52 961 179 0918</p>
+                <div class="social-icons">
+                 <a href="https://www.instagram.com/jochex1/"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="www.linkedin.com/in/jocheDiaz"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/cvjoche.pdf" download class="btn btn2"> Descargar CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Nombre" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btn btn2">Enviar</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>© 2023 Joche Díaz Fotografía. Todos los derechos reservados.</p>
+</div>
+</div>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyG3zJm1JzaEwxczume8AKff1iNN3tRXdQ9LVrjT36ElgaHv0XEVI8GmycCrb8j-3J7/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Mensaje enviado"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
